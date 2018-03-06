@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+	<property>
+		<name>dfs.name.dir</name>
+		<value>/hadoop/name1, /hadoop/name2</value>
+		<description>
+		 <!--#hadoop的name目录路径-->
+		</description>
+	</property>
+	<property>
+		<name>dfs.data.dir</name>
+		<value>/hadoop/data1, /hadoop/data2</value>
+		<description>
+		</description>
+	</property>
+	<property>
+  		<name>dfs.replication</name>
+  <!-- 我们的集群有两个结点，ubuntulxy02和ubuntulxy03,所以可以rep两份 -->
+ 		<value>2</value>
+	</property>
+</configuration>
